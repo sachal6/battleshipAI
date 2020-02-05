@@ -72,7 +72,7 @@ class AI(Player):
         '''
         Takes output of previous action and generates displayable string to communicate the information
         '''
-        result_text = f"Attack at position ({attack_location[0]}, {attack_location[1]})"  
+        result_text = f"Attack at position ({attack_location[1]}, {len(self.game_board.board)-attack_location[0]})"  
         if result == BoardStates.MISS.value:
             result_text += ' missed'
         else:

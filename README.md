@@ -1,7 +1,14 @@
 # battleshipAI
+Sachal Dhillon
 
 ## Description
 Visualization of 2 AIs playing a game of Battleship against each other. 
+
+## Installation
+with any python3 environment, run: 
+
+* pip install -r requirements.txt
+* python Main.py
 
 ## Usage
 ![Drag Racing](images/display.png)
@@ -17,12 +24,6 @@ When the 'Step' button is clicked, the active player takes a turn and attempts t
 At every step, the AI simulates all possible placements of any ship given the current known board state. The selected strike location is then the position that was present in the most valid placements.
 
 Though this may seem computationaly intensive, the simulations are trivial on a 10x10 board. Performance can still be bounded by taking a monte-carlo approach to simulating positions if the board size or sparsity is increased. 
-
-## Installation
-with any python3 environment, run: 
-
-* pip install -r requirements.txt
-* python Main.py
 
 ## Notes
 Developed according to rules documented at: https://www.thesprucecrafts.com/the-basic-rules-of-battleship-411069
