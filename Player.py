@@ -98,7 +98,7 @@ class AI(Player):
                     location = np.array([i,k])
                     for direction in GameBoard.DIRECTIONS:  
                         if known.is_valid_placement(location, direction, ship):
-                            current_location = location
+                            current_location = location.copy()
                             for _ in range(ship):
                                 x,y = current_location
                                 ship_likelihood[x][y]+=1
